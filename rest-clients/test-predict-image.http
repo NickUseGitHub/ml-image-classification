@@ -1,0 +1,10 @@
+# Ref: https://stackoverflow.com/a/61787634
+POST http://localhost:5000/predict HTTP/1.1
+Content-Type: multipart/form-data; boundary=----WebKitFormBoundary7MA4YWxkTrZu0gW
+
+------WebKitFormBoundary7MA4YWxkTrZu0gW
+Content-Disposition: form-data; name="file"; filename="test-3.png"
+Content-Type: image/png
+
+< ./rest-clients/tmp/weapons/test-2.png
+------WebKitFormBoundary7MA4YWxkTrZu0gW--
