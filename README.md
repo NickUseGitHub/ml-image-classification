@@ -12,7 +12,6 @@
   - [https://stackoverflow.com/questions/71516530/installing-keras-tensorflow2-on-macbook-air-with-apple-m1-chip/73341427#73341427](https://stackoverflow.com/questions/71516530/installing-keras-tensorflow2-on-macbook-air-with-apple-m1-chip/73341427#73341427)
 
 
-
 ### Get started
 - create anaconda environment with this command
 ```
@@ -25,6 +24,17 @@ $ conda activate tensorflow
 - start jupyter notebook
 ```
 $ jupyter notebook
+```
+
+#### File Structure
+```
+├── Dockerfile <------ image's blueprint
+├── predict-output.ipynb <------ test output
+├── datasets
+predict
+│   ├── predict  // we divided class with name of files
+│   │   ├── noweapons <------ class for detect object
+│   │   └── weapons <------ class for detect object
 ```
 
 ### Build docker
@@ -42,6 +52,10 @@ $ docker run --rm -p 5000:5000 <YOUR_IMAGE_NAME>:<TAG_VERSION>
 ```
 $ python ./app/app.py
 ```
+
+### FAQ
+- Load model via URL
+> [Load weights from URL - https://stackoverflow.com/questions/46283444/load-weights-from-url](https://stackoverflow.com/questions/46283444/load-weights-from-url)
 
 
 
