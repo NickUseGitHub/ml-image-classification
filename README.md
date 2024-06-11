@@ -29,9 +29,9 @@ $ jupyter notebook
 #### File Structure
 ```
 ├── Dockerfile <------ image's blueprint
+├── model.h5 <------ built model for image classification
 ├── predict-output.ipynb <------ test output
 ├── datasets
-predict
 │   ├── predict  // we divided class with name of files
 │   │   ├── noweapons <------ class for detect object
 │   │   └── weapons <------ class for detect object
